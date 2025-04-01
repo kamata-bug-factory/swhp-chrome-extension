@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "swhp-chrome-extension",
+  "version": "1.0",
+  "description": "SW社HPでマウスカーソルに付与されたパーティクルを無効にする",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.skywill.jp/*"],
+      "js": ["disable-particle.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
