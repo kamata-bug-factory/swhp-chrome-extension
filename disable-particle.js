@@ -28,18 +28,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  let mouseX = 0;
+  let mouseY = 0;
+
   // マウスカーソルの動きに合わせてPOINTERを追従する
   window.addEventListener('mousemove', (event) => {
-    const mouseX = event.clientX;
-    const mouseY = event.clientY;
-
-    // スクロール位置を考慮する
-    const scrollY = window.scrollY;
+    mouseX = event.clientX;
+    mouseY = event.clientY;
 
     // POINTERが表示されているとき、マウスカーソルの位置に追従させる
     if (pointer.style.visibility === 'inherit') {
-      pointer.style.left = mouseX + 'px';
-      pointer.style.top = mouseY + scrollY + 'px';
+      pointer.style.left = `${mouseX}px`;
+      pointer.style.top = `${mouseY + window.scrollY}px`;
+    }
+  });
+
+  // スクロール時にもPOINTERを追従する
+  window.addEventListener('scroll', () => {
+    if (pointer.style.visibility === 'inherit') {
+      pointer.style.top = `${mouseY + window.scrollY}px`;
     }
   });
 });
