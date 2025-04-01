@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // ParticleJSの処理はmyCanvasにバインドされている
+  // ParticleJSは描画するためのコンテナをmyCanvasに追加している
   // myCanvasをDOMツリーから削除すればパーティクルを無効化できる
   const myCanvas = document.getElementById('myCanvas');
   if (myCanvas) {
