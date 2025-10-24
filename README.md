@@ -24,4 +24,4 @@ A lightweight browser extension to remove cursor particle effects from [a partic
 
 ## License
 
-MIT License &copy; 2025 Kazuki Kamata
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
