@@ -1,3 +1,27 @@
-# swhp-chrome-extension
+# Cursor Particle Remover
 
-[SW 社ホームページ](https://www.skywill.jp/) でマウスカーソルに付与されたパーティクルを無効化するブラウザ拡張機能
+A lightweight browser extension to remove cursor particle effects from [a particular website](https://www.skywill.jp/).
+
+## Features
+
+- Disable cursor particle effects on a particular website.
+- Lightweight and does not affect website performance.
+- Works automatically after installation, no configuration needed.
+
+## Installation
+
+### Chrome
+
+1. Download ZIP and extract it.
+2. Open Chrome extensions page: `chrome://extensions/`
+3. Enable **Developer mode**.
+4. Click **Load unpacked** and select the extracted folder.
+
+## Usage
+
+- Once installed, cursor particle effects are automatically removed.
+- No further action is needed.
+
+## License
+
+MIT License &copy; 2025 Kazuki Kamata
